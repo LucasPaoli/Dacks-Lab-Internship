@@ -1,5 +1,7 @@
 # README : HOW TO USE THESE SCRIPTS
 
+In addition to the all these scripts, you will need the executables (see Script header) and PR2 and SILVA databases.
+
 
 First run the script "Script_usearch_version.sh". Make sure to check the header of the script and change the variables to the appropriate values
 
