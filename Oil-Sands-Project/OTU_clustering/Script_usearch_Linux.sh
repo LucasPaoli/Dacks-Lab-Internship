@@ -254,7 +254,10 @@ done
 rm "${OUTPUT}"/otus_unknown.txt.txt
 
 # The end is done with R
-# Rscript /home/paoli/opt/OTU_clustering_LP/Script_usearch.R "${OUTPUT}"
+Rscript /home/paoli/opt/OTU_clustering_LP/Script_usearch.R "${OUTPUT}"
+
+# Filtering out Metazoa and Streptophytes /!\ Check manually that Streptophytes are all Embryophytes
+./Filter.sh "${OUTPUT}"
 
 
 
