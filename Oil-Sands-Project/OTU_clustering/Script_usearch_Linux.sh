@@ -1,10 +1,10 @@
 #!/bin/sh
 
 ##These commands set up the Grid Environment for your job:
-#PBS -N Usearch_BML2
+#PBS -N Name_of_the_job
 #PBS -l nodes=1,walltime=1000:00:00
 #PBS -q default
-#PBS -M paoli@ualberta.ca
+#PBS -M email@adress
 #PBS -m abe
 ##Print the Host name of Node
 echo "Hostname is " $HOSTNAME
@@ -214,6 +214,7 @@ blastn \
 -query "${OUTPUT}"/otus.fa \
 -out "${OUTPUT}"/otu_taxonomy.txt \
 -max_target_seqs 1 \
+-perc_identity 95 \
 -num_threads "${N_THREADS}" \
 -outfmt 6
 
@@ -254,9 +255,6 @@ rm "${OUTPUT}"/otus_unknown.txt.txt
 
 # The end is done with R
 # Rscript /home/paoli/opt/OTU_clustering_LP/Script_usearch.R "${OUTPUT}"
-
-# Let's do the analysis!
-# Rscript Analysis.R "${sample_number}
 
 
 
