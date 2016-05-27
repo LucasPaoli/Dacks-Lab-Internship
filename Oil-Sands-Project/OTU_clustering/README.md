@@ -3,7 +3,7 @@
 
 First run the script "Script_usearch_version.sh". Make sure to check the header of the script and change the variables to the appropriate values
 
-Then run the script "Script_usearch.R" as follows : *Rscript Script_usearch.R /Path/to/Output-Directory/*
+The "Script_usearch.R" script should be called automatically. If not, run the script "Script_usearch.R" as follows : *Rscript Script_usearch.R /Path/to/Output-Directory/*
 
 Then run the script "Filter.sh" as follows : *./Filter.sh /Path/to/Output-Directory/*
 
