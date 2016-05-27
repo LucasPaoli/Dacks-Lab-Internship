@@ -240,6 +240,9 @@ rm "${OUTPUT}"/otus_unknown.txt.txt
 # The end is done with R
 Rscript Script_usearch.R "${OUTPUT}"
 
+# Filtering out Metazoa and Streptophytes /!\ Check manually that Streptophytes are all Embryophytes
+./Filter.sh "${OUTPUT}"
+
 
 
 
