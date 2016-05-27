@@ -198,6 +198,7 @@ blastn \
 -query "${OUTPUT}"/otus.fa \
 -out "${OUTPUT}"/otu_taxonomy.txt \
 -max_target_seqs 1 \
+-perc_identity 95 \
 -num_threads "${N_THREADS}" \
 -outfmt 6
 
@@ -238,9 +239,6 @@ rm "${OUTPUT}"/otus_unknown.txt.txt
 
 # The end is done with R
 Rscript Script_usearch.R "${OUTPUT}"
-
-# Let's do the analysis!
-# Rscript Analysis.R "${sample_number}
 
 
 
