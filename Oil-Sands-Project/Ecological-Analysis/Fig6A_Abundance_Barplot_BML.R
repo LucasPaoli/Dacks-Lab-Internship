@@ -69,7 +69,7 @@ par(mfrow=c(3,4),oma=c(5,2,6,0),mar=c(0.5,0.25,0.5,0.25))
 
 barplot(border=NA,names.arg=c(3,1,2),space=0.05,axes=F,as.matrix(Class_sub_N[,c("SMPL6","SMPL0","SMPL3")]),col=rainbow(length(row.names(Class_sub_N))))
 mtext(side=3,"MAY",cex=1,padj=-0.5)
-mtext(side = 2, text = "Depth : Om",padj=-1)
+mtext(side = 2, text = "Depth : 0m",padj=-1)
 barplot(border=NA,names.arg=c(3,1,2),space=0.05,axes=F,as.matrix(Class_sub_N[,c("SMPL37","SMPL18","SMPL27")]),col=rainbow(length(row.names(Class_sub_N))))
 mtext(side=3,"JUNE",cex=1,padj=-0.5)
 barplot(border=NA,names.arg=c(3,1,2),space=0.05,axes=F,as.matrix(Class_sub_N[,c("SMPL15","SMPL9","SMPL12")]),col=rainbow(length(row.names(Class_sub_N))))
