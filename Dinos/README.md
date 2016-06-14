@@ -1,3 +1,3 @@
 # Dino Project
 
-Mostly R script used to produce the figures
+Most of R scripts used to produce the figures of the project : Dinoflagellates RNA editing
